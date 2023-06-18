@@ -3,7 +3,7 @@ import logo from './logo.svg';
 import './App.css';
 import { useState } from 'react';
 import { useRef } from 'react';
-import logoFraise from "./assets/png-transparent-strawberry-illustration-ms-pac-man-galaxian-super-smash-bros-for-nintendo-3ds-and-wii-u-arcade-game-pac-man-super-smash-bros-for-nintendo-3ds-and-wii-u-text-rectangle-removebg-preview.png"
+import logoFraise from "./assets/fraise2.png"
 import gameScreen from "./assets/56455_old-computer-monitor-png-removebg-preview.png"
 import { useInterval } from './useInterval';
 
@@ -93,7 +93,7 @@ function App() {
 
   function changeDirection(e: React.KeyboardEvent<HTMLDivElement>) {
     switch (e.key) {
-      case "ArrowLeft":
+      case "ArrowLeft"  :
         setDirection([-1, 0]);
         break;
       case "ArrowUp":
@@ -106,7 +106,10 @@ function App() {
         setDirection([0, 1]);
         break;
     }
-  }
+  };
+  
+
+  
 
   return (
     <div onKeyDown={(e) => changeDirection(e)}>
